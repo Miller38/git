@@ -1,0 +1,72 @@
+-configurar usuario
+git config --global user.name "Miller"
+-visualizar usuario
+git config user.name
+-avanzar
+cd nombre archivo
+-regresar
+cd ..
+-crear carpeta 
+mkdir nombre
+-borrar carpeta
+rmdir nombre
+-inicializar
+git init
+-cambiar rama master
+git config --global init.defaultBranch main
+-ver el estado
+git status
+-abrir archivo en el editor
+code .
+-agregar al stagin area
+git add .      para agregar todo o el nombre del archivo 
+reversar 
+git rm --cached mi-archivo.txt
+
+COMMIT
+-agregar commit
+git commit -m "cualquier cosa"
+-ver la info del commit 
+git log
+-Asociar editor
+git config --global core.editor "code --wait"
+-deshacer commit
+git reset --soft HEAD~1
+
+RAMAS
+-crear rama
+git branch version-javascript
+-ver ramas
+git branch
+-cambiar de rama
+git checkout  ,nombre al que queremos ir
+-volver a la rama main
+git checkout main
+-crear rama y cambiar de una vez
+git checkout -b version-python
+-cambiar nombre de una rama METODO#1
+nos paramos en la rama
+git checkout version-javascript
+cambiamos el nombre
+git branch -m version-js
+
+METODO#2
+git branch -m version-python version-py
+
+-eliminar rama
+git branch -d version-py
+
+-crear commit en las ramas 
+
+-ver commit mas resumidos
+git log --oneline
+-tambien
+git log -p 
+
+fusionar ramas en git
+se debe estar en la rama que recibira la fusion
+git merge  texto-expandido
+
+GITHUB
+-Clonar Repositorio
+git clone https://github.com/Miller38/Formulario-css.git 
